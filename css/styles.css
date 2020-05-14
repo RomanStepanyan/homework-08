@@ -1,10 +1,28 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size:0px;
+    box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+}
 
-
-
-
-
-
-
+html {
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.container {
+    width: 280px;
+    margin: 0 auto;
+}
 
 
 @font-face {
@@ -44,6 +62,66 @@
          url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
          url('../fonts/roboto-v20-latin-regular.woff') format('woff');
 }
-   
+body {
+    width: 320px;
+    margin: 0 auto;
+}
 
+header {
+    background-color: rgb(26, 25, 21);
+    background-image: url("../img/header-image.png");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+      
 
+.authorisation__button {
+    border: none;   
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    background: transparent;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    cursor: pointer;
+}
+  
+.logo_link {
+    display: block;
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+.main__title {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;  
+}
+    
+.authorisation__button-wrapper {
+    display: flex;
+}
+
+/* .authorisation__button:hover {
+    color: brown;
+    display: block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);    
+    width: 94px;
+    height: 40px;
+} */
+  
