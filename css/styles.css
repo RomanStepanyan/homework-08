@@ -16,14 +16,14 @@ html {
 }
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
-.container {
-    width: 280px;
-    margin: 0 auto;
+button {
+    display: block;
+    background: transparent;
+    border: none;
 }
-
 
 @font-face {
     font-family: 'Montserrat';
@@ -62,9 +62,31 @@ img {
          url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
          url('../fonts/roboto-v20-latin-regular.woff') format('woff');
 }
-body {
-    width: 320px;
-    margin: 0 auto;
+
+
+@media (max-width: 767px) {
+    body {
+        width: 320px;
+        margin: 0 auto;
+    }
+    .container {
+        width: 280px;
+        margin: 0 auto;
+    }
+    .main__title-description-text {
+        padding: 18px 22px;
+    }
+    .find__partner__button-wrapper {
+        padding-bottom: 138px;    
+    }
+    .authorisation__button-wrapper {
+        max-width: 176px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 98px;
+        padding: 20px 0px;
+    }      
+
 }
 
 header {
@@ -75,21 +97,23 @@ header {
     height: auto;
     margin: 0 auto;
 }
-      
 
-.authorisation__button {
-    border: none;   
+
+.authorisation__button { 
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
     font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
-    background: transparent;
+    line-height: 1;
+    text-align: center;    
     display: block;
     margin: 0 auto;
-    padding: 20px;
+    padding: 8px 16px;
     cursor: pointer;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 20px;
 }
   
 .logo_link {
@@ -98,8 +122,9 @@ header {
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1;
     text-align: center;
+    margin-bottom: 38px;
 }
 .main__title {
     font-size: 30px;
@@ -107,13 +132,40 @@ header {
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;  
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -1px;
 }
     
-.authorisation__button-wrapper {
-    display: flex;
+.main__title-description-text {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: center;
 }
+
+
+
+.find__partner__button {
+    background-color: rgb(255, 78, 80);
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    margin: 0 auto;
+    padding: 13px;
+}
+  
+  
+
+
+
+
+
 
 /* .authorisation__button:hover {
     color: brown;
@@ -124,4 +176,19 @@ header {
     width: 94px;
     height: 40px;
 } */
+/* .Rectangle_2 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(26, 25, 21, 0);
+    position: absolute;
+    left: 624px;
+    top: 34px;
+    width: 94px;
+    height: 40px;
+    z-index: 49;
+  }
+   */
   
+
+
