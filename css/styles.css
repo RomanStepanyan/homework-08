@@ -97,7 +97,9 @@ button {
         margin: 0 auto 44px;        
         padding: 20px 0px;
     }      
-
+    .section__partners__list-item {
+        margin: 0 auto 30px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -113,14 +115,13 @@ button {
         background-image: url("../img/768px/header-image-768px.png");
     }
     .navigation__wrappe {
-        min-width: 460px;
-        max-width: 762px;
+        min-width: 762px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
     .authorisation__button-wrapper {
-        margin: 0 auto 134px;
+        margin: 0 0 134px;
     }
     .main__title {
         font-size: 52px;
@@ -134,7 +135,30 @@ button {
     .see__other__partner__button {
         max-width: 228px;
     }
+    .section__partners__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section__partners__list-item {
+        margin: 0 auto 60px;
+    }
+    .section__partners__list :nth-child(even) {
+        margin-bottom: 38px;
+    }
+    .section__partners__list :nth-child(1) {
+        order: 1;
+    }
+    .section__partners__list :nth-child(2) {
+        order: 2;
+    }
+    .section__partners__list :nth-child(3) {
+        order: 1;
+    }
+    .section__partners__list :nth-child(4) {
+        order: 2;
+    }
 }   
+
 
 header {
     background-color: rgb(26, 25, 21);   
@@ -143,9 +167,7 @@ header {
     height: auto;
     margin: 0 auto;
 }
-.authorisation__button-wrapper {
-    widows: 176px;
-}
+
 .authorisation__button { 
     font-size: 14px;
     font-family: "Montserrat";
@@ -231,7 +253,6 @@ header {
 .section__partners__list-item {
     display: block;
     width: 220px;
-    margin: 0 auto 30px;
 }
 
 .partners__image {
@@ -277,22 +298,48 @@ header {
     transition: all 500ms linear;
 }
 
-/* .partners__image-wrapper {
-    width: 220px;
-    height: 158px;
-    background-color: salmon;
-} */
+.partners__image-wrapper {
+    width: 121px;
+    height: auto;
+    margin: 0 auto;    
+    position: relative;
+}
 
-/* .partners__image-wrapper::after {
+.partners__image-wrapper::before {
     content: "";
-    background-image: url("../img/partner1-icon-image.png");
+    box-sizing: content-box;    
     width: 17px;
     height: 17px;
     background-repeat: no-repeat;
-    background-position: top;
-    background-color: red;
+    border-radius: 50%;    
     display: block;
-    
-}  */
+    position: absolute;
+    border: 7px solid ;
+    box-shadow: 0 0 0 4px #ffffff;
+    bottom: 0;
+    right: 0;
+} 
+
+.partner1__image-wrapper::before {
+    background-image: url("../img/partner1-icon-image.png");
+    background-color: rgb(255, 78, 80);
+    border-color: #ff4e50;
+}
+
+.partner2__image-wrapper::before {
+    background-image: url("../img/partner2-icon-image.png");
+    background-color: #ffa507;
+    border-color:#ffa507;
+}
+.partner3__image-wrapper::before {
+    background-image: url("../img/partner3-icon-image.png");
+    background-color: #1cd7ad;
+    border-color:#1cd7ad;
+}
+.partner4__image-wrapper::before {
+    background-image: url("../img/partner4-icon-image.png");
+    background-color: #4e73db;
+    border-color:#4e73db;
+}
 
 
