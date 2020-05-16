@@ -35,8 +35,7 @@ button {
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
          url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
          url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
-  }
-  
+}
   
 @font-face {
     font-family: 'Montserrat';
@@ -54,8 +53,7 @@ button {
     src: local('Roboto Light'), local('Roboto-Light'),
          url('../fonts/roboto-v20-latin-300.woff2') format('woff2'),
          url('../fonts/roboto-v20-latin-300.woff') format('woff');
-  }
-  
+}
 
 @font-face {
     font-family: 'Roboto';
@@ -65,7 +63,6 @@ button {
          url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
          url('../fonts/roboto-v20-latin-regular.woff') format('woff');
 }
-
 
 @media screen and (min-width: 320px) {
     body {
@@ -79,11 +76,15 @@ button {
         width: 284px;
         margin: 0 auto;
     }
+    .logo_link {
+        padding: 20px 0;
+    }
     .main__title {
         font-size: 30px;
+        line-height: 1.2;
     }
     .main__title-description-text {
-        padding: 18px 22px;
+        padding: 18px 26px;
         font-size: 18px;
     }
             
@@ -98,8 +99,18 @@ button {
         padding: 20px 0px;
     }      
     .section__partners__list-item {
-        margin: 0 auto 30px;
+        margin: 0 auto;
     }
+    .section__partners__list-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .section__partners__title{
+        margin-bottom: 20px;
+    }
+    .other__partner__button-wrapper {
+        padding: 28px 0 56px;
+    }    
 }
 
 @media screen and (min-width: 768px) {
@@ -115,13 +126,17 @@ button {
         background-image: url("../img/768px/header-image-768px.png");
     }
     .navigation__wrappe {
-        min-width: 762px;
+        min-width: 670px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
     .authorisation__button-wrapper {
         margin: 0 0 134px;
+        padding: 38px 0;
+    }
+    .logo_link {
+        padding: 38px 0;
     }
     .main__title {
         font-size: 52px;
@@ -130,10 +145,17 @@ button {
     }
     .main__title-description-text {
         font-size: 24px;
+        padding-bottom: 34px;
+    }
+    .find__partner__button-wrapper {
+        padding-bottom: 234px;
     }
     .find__partner__button, 
     .see__other__partner__button {
         max-width: 228px;
+    }
+    .section__partners__title {
+        margin-bottom: 34px;
     }
     .section__partners__list {
         display: flex;
@@ -143,7 +165,7 @@ button {
         margin: 0 auto 60px;
     }
     .section__partners__list :nth-child(even) {
-        margin-bottom: 38px;
+        margin-bottom: 0;
     }
     .section__partners__list :nth-child(1) {
         order: 1;
@@ -157,8 +179,38 @@ button {
     .section__partners__list :nth-child(4) {
         order: 2;
     }
+    .other__partner__button-wrapper {
+        padding: 40px 0 40px;
+    }
 }   
 
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 490px;
+        margin: 0 auto;
+    }
+    header {
+        background-image: url("../img/1440px/header_image-1440px.png");
+    }
+    .navigation__wrappe {
+            min-width: 940px;
+    }
+    .authorisation__button-wrapper {
+        margin: 0 0 152px;    
+    }
+    .section__partners__list {
+        min-width: 940px;
+    }
+    .section__partners__title {
+        margin-bottom: 34px;
+    }
+    .other__partner__button-wrapper {
+        padding: 40px 0 72px;
+    }
+    .section__partners__list-item {
+        margin-bottom: 0;
+    }
+}
 
 header {
     background-color: rgb(26, 25, 21);   
@@ -183,11 +235,11 @@ header {
     border-color: transparent;
     border-radius: 20px;
 }
+
 .authorisation__button:hover {
     border-color: #ffffff;
     transition: all 500ms linear;
 }
-
 
 .logo_link {
     display: block;
@@ -196,8 +248,7 @@ header {
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.7;
-    text-align: center;
-    padding: 20px 0;
+    text-align: center;    
 }
 .main__title {    
     font-family: "Montserrat";
@@ -214,6 +265,7 @@ header {
     color: rgb(255, 255, 255);
     line-height: 1;
     text-align: center;
+    font-weight: 300;
 }
 
 .find__partner__button:hover {
@@ -235,7 +287,7 @@ header {
     line-height: 1;
     text-align: center;
     margin: 0 auto;
-    padding: 13px;
+    padding: 11px;
     cursor: pointer;
 }
 
@@ -247,7 +299,7 @@ header {
     line-height: 1;
     text-align: center;
     padding-top: 70px;
-    margin-bottom: 20px;
+    
 }
 
 .section__partners__list-item {
@@ -287,8 +339,7 @@ header {
     border-color: rgb(255, 78, 80);
     border-radius: 20px;
     background-color: transparent;
-    padding: 13px;
-    margin-bottom: 56px;
+    padding: 11px;
     cursor: pointer;
 }
 
@@ -341,5 +392,4 @@ header {
     background-color: #4e73db;
     border-color:#4e73db;
 }
-
 
