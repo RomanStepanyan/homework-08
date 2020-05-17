@@ -164,19 +164,19 @@ button {
     .section__partners__list-item {
         margin: 0 auto 60px;
     }
-    .section__partners__list :nth-child(even) {
+    .section__partners__list:nth-child(even) {
         margin-bottom: 0;
     }
-    .section__partners__list :nth-child(1) {
+    .section__partners__list:nth-child(1) {
         order: 1;
     }
-    .section__partners__list :nth-child(2) {
+    .section__partners__list:nth-child(2) {
         order: 2;
     }
-    .section__partners__list :nth-child(3) {
+    .section__partners__list:nth-child(3) {
         order: 1;
     }
-    .section__partners__list :nth-child(4) {
+    .section__partners__list:nth-child(4) {
         order: 2;
     }
     .other__partner__button-wrapper {
@@ -358,38 +358,39 @@ header {
 
 .partners__image-wrapper::before {
     content: "";
-    box-sizing: content-box;    
-    width: 17px;
-    height: 17px;
+    /* box-sizing: content-box;     */
+    width: 40px;
+    height: 40px;
     background-repeat: no-repeat;
     border-radius: 50%;    
     display: block;
     position: absolute;
-    border: 7px solid ;
-    box-shadow: 0 0 0 4px #ffffff;
+    border: 4px solid #ffffff;
+    /* box-shadow: 0 0 0 4px #ffffff; */
     bottom: 0;
     right: 0;
+    background-position: center;
 } 
 
 .partner1__image-wrapper::before {
     background-image: url("../img/partner1-icon-image.png");
     background-color: rgb(255, 78, 80);
-    border-color: #ff4e50;
+    /* border-color: #ff4e50; */
 }
 
 .partner2__image-wrapper::before {
     background-image: url("../img/partner2-icon-image.png");
     background-color: #ffa507;
-    border-color:#ffa507;
+    /* border-color:#ffa507; */
 }
 .partner3__image-wrapper::before {
     background-image: url("../img/partner3-icon-image.png");
     background-color: #1cd7ad;
-    border-color:#1cd7ad;
+    /* border-color:#1cd7ad; */
 }
 .partner4__image-wrapper::before {
     background-image: url("../img/partner4-icon-image.png");
     background-color: #4e73db;
-    border-color:#4e73db;
+    /* border-color:#4e73db; */
 }
 
